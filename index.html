@@ -146,11 +146,13 @@
 
             } 
             @media screen and (max-width:600px) {
+                .h1       { font-size: 32px !important; line-height: 40px !important; }
                 .w100p    { width: 100% !important; }
                 .imgFull  { width: 100% !important; height: auto !important; }
                 .tPad-0   { padding-top:   0 !important; }
                 .rPad-0   { padding-right: 0 !important; }
                 .lrPad-16 { padding-left: 16px !important; padding-right: 16px !important; }
+                
             }
         </style>
 
@@ -229,7 +231,18 @@
             a {text-decoration: none;}
         </style>
         <![endif]-->
-        
+
+        <!-- Keep button text white in Outlook dark mode -->
+        <!--[if gte mso 16]> 
+        <style> 
+            .keep-white { 
+                mso-style-textfill-type:gradient; 
+                mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000"; 
+                color:#000000 !important; 
+            } 
+        </style> 
+        <![endif]-->
+
     </head>
 
     <body class="darkmode body body-fix" style="font-family: 'Inter'">
@@ -252,7 +265,7 @@
                             </tr>
                             <!-- END OF HEADER -->
 
-                            <!-- START OF THANKS SECTION -->
+                            <!-- START OF SUMMARY SECTION -->
                             <tr>
                                 <td class="lrPad-16">
                                     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="max-width: 500px;">
@@ -263,7 +276,7 @@
                                     <![endif]-->
                                         <tr>
                                             <td>
-                                                <h1 style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #444444; text-align: center;">Thanks For Your Order</h1>
+                                                <h1 class="h1" style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #444444; text-align: center;">Thanks For Your Order</h1>
                                             </td>
                                         </tr>
                                         <tr>
@@ -276,7 +289,7 @@
                                                 <table border="0" cellspacing="0" cellpadding="0">
                                                     <tr>
                                                         <td style="padding: 13px 33px; border-radius:5px; background-color: #008AF1;" align="center">
-                                                            <a rel="noopener" target="_blank" href="http://litmus.com" target="_blank" style="font-size: 19px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block;">VIEW ORDER STATUS</a>
+                                                            <a class="keep-white" rel="noopener" target="_blank" href="http://litmus.com" target="_blank" style="font-size: 19px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block;">VIEW ORDER STATUS</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -290,7 +303,7 @@
                                     </table>
                                 </td>
                             </tr>
-                            <!-- END OF THANKS SECTION -->
+                            <!-- END OF SUMMARY SECTION -->
                      
                         </table>
                     </td>
