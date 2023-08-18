@@ -39,6 +39,18 @@
 
         <!-- Web fonts / @font-face -->
         <style>
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,700italic,900);
+                body { font-family: 'Roboto', Arial, sans-serif !important; }
+
+
+
+
+
+
+
+
+
+
             @media screen {
                 /* latin */
                 @font-face {
@@ -130,26 +142,15 @@
 
         <!-- Mobile styles -->
         <style>
+            @media screen and (min-width: 600px) {
+
+            } 
             @media screen and (max-width:600px) {
-                .w90p  { width: 90%  !important; }
-                .w95p  { width: 95%  !important; }
-                .w100p { width: 100% !important; }
-
-                .imgFull { width: 100% !important; height: auto !important; }
-
-                .desktop { width: 0 !important; display: none !important; }
-                .mobile { display: block !important; }
-
-                .std { font-size: 18px !important; line-height: 28px !important; }
-
-                .cTxt { text-align: center !important; }
-
-                .tPad-0  { padding-top:   0 !important; }
-                .lPad-0  { padding-left:  0 !important; }
-                .rPad-0  { padding-right: 0 !important; }
-                .bPad-30 { padding-bottom: 30px !important; }
-
-                .star a { font-size: 40px !important; }
+                .w100p    { width: 100% !important; }
+                .imgFull  { width: 100% !important; height: auto !important; }
+                .tPad-0   { padding-top:   0 !important; }
+                .rPad-0   { padding-right: 0 !important; }
+                .lrPad-16 { padding-left: 16px !important; padding-right: 16px !important; }
             }
         </style>
 
@@ -176,16 +177,13 @@
                 .light-img { display: none; display: none !important; }
 
                 /* Custom Dark Mode Background Color */
-                .darkmode  { background-color: #03051A !important; }
+                .darkmode  { background-color: #121212!important; }
                 .darkmode2 { background-color: #17192E !important; }
                 .darkmode3 { background-color: #2B2D42 !important; }
 
                 /* Custom Dark Mode Font Colors */
-                h1, h2, h3, p, img { color: #EDF2F4 !important; }
+                h1, h2, h3, p, img { color: #CACACA !important; }
 
-                /* Custom Dark Mode Text Link Color */
-                .link { color: #028383 !important; }
-                /* .footer a.link { color: #fdfdfd !important; } */
             }
 
             /* Copy dark mode styles for android support */
@@ -240,18 +238,64 @@
             <div style="display:none;">
                 &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
             </div>
-            <table class="darkmode" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #cfdce2;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="background: #e0e0e0;">
                 <!-- MAIN CONTENT -->
                 <tr>
-                    <td class="tPad-0" align="center" valign="top">
-                        <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px; background-color: #ffffff;">
+                    <td>
+                        <table class="w100p darkmode" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" style="background-color: #ffffff;">
+                      
+                            <!-- START OF HEADER -->
+                            <tr>
+                                <td class="header" align="center" style="padding-top: 45px; padding-bottom: 40px;">
+                                    <img width="124" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/40134977-12fa-a10a-67e5-044cf1f3cb7d.png" alt="Chewy Logo" style="vertical-align: middle; width: 100%; max-width: 124px;">
+                                </td>
+                            </tr>
+                            <!-- END OF HEADER -->
 
-                       
+                            <!-- START OF THANKS SECTION -->
+                            <tr>
+                                <td class="lrPad-16">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="max-width: 500px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500">
+                                    <tr>
+                                    <td align="center" valign="top" width="500">
+                                    <![endif]-->
+                                        <tr>
+                                            <td>
+                                                <h1 style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #444444; text-align: center;">Thanks For Your Order</h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="padding-top: 15px; padding-bottom: 20px;">
+                                                <p  style="margin: 0; padding: 0; font-size: 18px; line-height: 24px; font-family: 'Roboto', Arial, sans-serif; font-weight: normal; color: #000000; text-align: center;">You'll receive an email when your items are shipped. If you have any questions, call us any time at 1-800-672-4399 or simply reply to this email.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 30px;">
+                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td style="padding: 13px 33px; border-radius:5px; background-color: #008AF1;" align="center">
+                                                            <a rel="noopener" target="_blank" href="http://litmus.com" target="_blank" style="font-size: 19px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block;">VIEW ORDER STATUS</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END OF THANKS SECTION -->
+                     
                         </table>
                     </td>
                 </tr>
             </table>
         </div>
-        
     </body>
 </html>
