@@ -152,7 +152,7 @@
                 .tPad-0   { padding-top:   0 !important; }
                 .rPad-0   { padding-right: 0 !important; }
                 .lrPad-16 { padding-left: 16px !important; padding-right: 16px !important; }
-                .mobileShippingBorder { border-top: none !important; border-left: 1px solid #E5E5E5 !important; border-right: 1px solid #E5E5E5 !important; border-bottom: 1px solid #E5E5E5 !important;}
+                .mobileBottomBorder { border-right: none !important;  border-bottom: 1px solid #E5E5E5 !important;}
             }
         </style>
 
@@ -179,14 +179,15 @@
                 .light-img { display: none; display: none !important; }
 
                 /* Custom Dark Mode Background Color */
-                .darkmode  { background-color: #121212!important; }
-                .darkmode2 { background-color: #17192E !important; }
-                .darkmode3 { background-color: #2B2D42 !important; }
+                .darkmode    { background-color: #121212 !important; }
+                .darkmode2   { background-color: #050505 !important; }
+                .darkmode3   { background-color: #2B2D42 !important; }
+				.darkmodeRed { color: #f50000 !important;}
 
                 /* Custom Dark Mode Font Colors */
-                h1, h2, h3, p, img { color: #CACACA !important; }
-
-            }
+				p { color: #FFFFFF !important; }
+                h1, h2, h3 { color: #CCCCCC !important; }
+			}
 
             /* Copy dark mode styles for android support */
             /* Shows Dark Mode-Only Content, Like Images */
@@ -276,7 +277,7 @@
                                     <![endif]-->
                                         <tr>
                                             <td>
-                                                <h1 class="h1" style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #444444; text-align: center;">Thanks For Your Order</h1>
+                                                <h1 class="h1" style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #333333; text-align: center;">Thanks For Your Order</h1>
                                             </td>
                                         </tr>
                                         <tr>
@@ -307,31 +308,61 @@
 
 							<!-- START of TWO COLUMN LAYOUT -->
                             <tr>
-                                <td align="center" valign="top" style="padding: 0 25px;">
+                                <td align="center" valign="top" style="padding: 0 24px 30px;">
                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                                           <tr>
-                                               <td align="center" valign="top" style="font-size:0;">
+                                               <td class="darkmode" align="center" valign="top" style="font-size:0; border: 1px solid #E5E5E5; background-color: #FAFAFA;">
                                                 <!--[if (gte mso 9)|(IE)]>
                                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
                                                     <tr>
                                                     <td valign="top" style="width: 275px;">
                                                 <![endif]-->
-                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top;">
+                                                    <div class="w100p" class="rPad-0" style="display:inline-block;vertical-align:top;">
 														<table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width: 275px;">
 															<tr>
-																<td align="center" valign="top" style="border: 1px solid #E5E5E5;">
+																<td class="mobileBottomBorder" align="center" valign="top" style="border-right: 1px solid #E5E5E5;">
 																	<table align="left"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
 																		<tr>
-																			<td style="padding: 18px 18px 18px 23px; background-color: #FAFAFA;">
+																			<td style="padding: 18px 18px 18px 23px; width: 100%;">
 																				<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
 																					<tr>
-																						<td>
+																						<td style="padding-bottom: 8px;">
 																							<h2 style="font-size: 16px; font-weight: 900; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #333333;">SUMMARY:</h2>
 																						</td>
 																					</tr>
 																					<tr>
 																						<td>
-																							<p style="font-size: 16px;">You'll receive an email when your items are shipped. If you have any questions, call us any time at 1-800-672-4399 or simply reply to this email.</p>
+																							<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																								<tr>
+																									<td style="padding-bottom: 5px;">
+																										<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order #:</p>
+																									</td>
+																									<td style="padding-bottom: 5px;">
+																										<p align="right" style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">65006500</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="padding-bottom: 5px;">
+																										<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order Date:</p>
+																									</td>
+																									<td style="padding-bottom: 5px;">
+																										<p align="right" style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Apr 3, 2017</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="padding-bottom: 10px;">
+																										<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order Total:</p>
+																									</td>
+																									<td style="padding-bottom: 10px;">
+																										<p align="right" style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">$49.35</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td>
+																										<p class="darkmodeRed" align="left"  style="color: #bc0101; font-weight: bold; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">You saved $12.69!</p>
+																									</td>
+																								</tr>
+																							</table>
 																						</td>
 																					</tr>
 																				</table>
@@ -347,22 +378,38 @@
                                                     
                                                     <td valign="top" style="width:275px;">
                                                 <![endif]-->
-                                                    <div style="display:inline-block;vertical-align:top;">
+                                                    <div class="w100p" style="display:inline-block;vertical-align:top;">
                                                         <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width:275px;">
                                                             <tr>
                                                                 <td>
-                                                                   <table class="mobileShippingBorder" align="left"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; border-top: 1px solid #E5E5E5; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5;">
+                                                                   <table align="left"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
 																	<tr>
-																		<td style="padding: 18px 18px 18px 23px; background-color: #FAFAFA;">
+																		<td style="padding: 18px 18px 18px 23px;">
 																			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
 																				<tr>
-																					<td>
+																					<td style="padding-bottom: 8px;">
 																						<h2 style="font-size: 16px; font-weight: 900; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #333333;">SHIPPING ADDRESS:</h2>
 																					</td>
 																				</tr>
 																				<tr>
 																					<td>
-																						<p style="font-size: 16px;">You'll receive an email when your items are shipped. If you have any questions, call us any time at 1-800-672-4399 or simply reply to this email.</p>
+																						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Smiles Davis</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">123 Somewhere St</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Somewhere, USA 65060</p>
+																								</td>
+																							</tr>
+																						</table>
 																					</td>
 																				</tr>
 																			</table>
